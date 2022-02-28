@@ -1,0 +1,10 @@
+#container {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 0px;
+    margin: 0px;
+}
