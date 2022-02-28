@@ -4,21 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>?? Sketch</title>
+    <title>Scribbles & Coloring</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
-        <h1>?? Sketch</h1>
+        <h1>Scribbles & Coloring</h1>
     </header>
-    <div class="options">
-        <input type="color" id="colorPicker" value="#006400">
-        <button class="button" id="colorBtn">Color</button>
-        <button class="button" id="randomBtn">Random</button>
-        <button class="button" id="eraser">Eraser</button>
-        <button class="button" id="clearAll">Clear All</button>
+    <p class="subtitle"> Kind of like an Etch A Sketch, but nah.</p>
+    <div id="main">
+        <div id="options">
+            <input type="color" id="colorPicker" value="#DAA520">
+            <button class="button active" id="colorBtn">Color</button>
+            <button class="button" id="randomBtn">Random</button>
+            <button class="button" id="eraserBtn">Eraser</button>
+            <button class="button" id="clearAll">Clear All</button>
+
+        <div class="grid-options">
+            <p>Select the size of your Grid:</p>
+            <input type="radio" id="gridSize1" name="grid-sizes" value="10x10" checked="checked">
+            <label for="gridSize1">10 x 10</label>
+            <input type="radio" id="gridSize2" name="grid-sizes" value="16x16">
+            <label for="gridSize2">16 x 16</label>
+            <input type="radio" id="gridSize3" name="grid-sizes" value="24x24">
+            <label for="gridSize3">24 x 24</label>
+        </div>
+        </div>
+        <div class="container" id="container"></div>
     </div>
-    <div id="container"></div>
+    <div class="footer">
+        <h4>Copyright © <a href="https://github.com/gervanna" target="_blank" rel="noopener noreferrer">Gervanna Stephens</a></h4>
+    </div>
 
     <script src="script.js"></script>
 </body>
